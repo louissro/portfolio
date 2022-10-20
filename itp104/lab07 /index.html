@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Louis Ro | Image Puzzle</title>
+<style>
+	
+	body {
+		background-image: url("img/pizzabackground.jpeg");
+	}
+
+	h1 {
+		text-align: center;
+		color: black;
+		text-shadow: 1px 10px 5px red;
+		background: orange;
+	}
+	img {
+		float: left;
+		width: 200px;
+		height: 268px;
+	}
+
+	#gallery-container {
+		background-color: rgba(204, 204, 204, 0.5);
+	}
+
+	#images {
+		width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#r1c1 {
+		position: relative;
+		top: 10px;
+		left: 25px;
+		z-index: 1;
+		box-shadow: 1px 1px 10px #d62828;
+	}
+
+	#r2c1 {
+		position: relative;
+		top: 5px;
+		left: 0px;
+		z-index: 1;
+		box-shadow: 1px 1px 10px #d62828;
+	}
+
+	#r2c3 {
+		position: relative;
+		top: 10px;
+		right: 25px;
+		z-index: 1;
+		box-shadow: 1px 1px 10px #d62828;
+	}
+
+	#r3c1 {
+		position: relative;
+		bottom: -5px;
+		left: 25px;
+		z-index: 1;
+		box-shadow: 1px 1px 10px #d62828;
+	}
+
+	#r3c2 {
+		position: relative;
+		bottom: -10px;
+		left: 5px;
+		z-index: 1;
+		box-shadow: 1px 1px 10px #d62828;
+	}
+
+	#r3c3 {
+		position: relative;
+		bottom: 5px;
+		right: -5px;
+		z-index: 1;
+		box-shadow: 1px 1px 10px #d62828;
+	}
+
+	.clearfloat {
+		clear: both;
+	}
+
+</style>
+</head>
+<body>
+	<h1>The Best Pizza Ever</h1>
+
+<div id="gallery-container">
+
+	<div id="images">
+		<img id="r1c1" src="img/row-1-column-1.jpg" alt="Row_1_Column_1">
+		<img src="img/row-1-column-2.jpg" alt="Row_1_Column_2">
+		<img src="img/row-1-column-3.jpg" alt="Row_1_Column_3">
+		<img id="r2c1" src="img/row-2-column-1.jpg" alt="Row_2_Column_1">
+		<img src="img/row-2-column-2.jpg" alt="Row_2_Column_2">
+		<img id="r2c3" src="img/row-2-column-3.jpg" alt="Row_2_Column_3">
+		<img id="r3c1" src="img/row-3-column-1.jpg" alt="Row_3_Column_1">
+		<img id="r3c2" src="img/row-3-column-2.jpg" alt="Row_3_Column_2">
+		<img id="r3c3" src="img/row-3-column-3.jpg" alt="Row_3_Column_3">
+	</div>
+	<div class="clearfloat"></div>
+</div>
+
+</body>
+</html>

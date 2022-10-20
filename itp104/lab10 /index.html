@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Louis Ro | Animation</title>
+<style>
+	body {
+		background-image: url("morningsky.jpeg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	img {
+		width: 200px;
+		height: auto;
+	}
+
+	#container {
+		height: 600px;
+		position: relative;
+	}
+
+	#airplane {
+		position: absolute;
+		width: 60%;
+		top: 100px;
+		bottom: 5px;
+	}
+
+	.speechbubble {
+		position: relative;
+		background: white;
+		border-radius: .4em;
+		font-family: arial, sans-serif;
+		width: 100px;
+		color: black;
+		padding: 25px;
+		text-align: center;
+		bottom: 20px;
+	}
+
+	.speechbubble:after {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-left: 24px solid #fff;
+		border-right: 12px solid transparent;
+		border-top: 12px solid #fff;
+		border-bottom: 20px solid transparent;
+		left: 90px;
+		bottom: -24px;
+	}
+
+	img, .speechbubble {
+		animation: airplane 5s infinite ease-out;
+	}
+
+	@keyframes airplane {
+		0%{margin-left: 0px}
+		100%{margin-left: 100%}
+	}
+
+
+
+
+</style>
+</head>
+<body>
+
+<div id="container">
+	<div id="airplane">
+		<div class="speechbubble">Weeee I'm flying</div>
+		<img src="airplane.png" alt="Airplane" />
+	</div>
+</div>
+
+
+
+</body>
+</html>

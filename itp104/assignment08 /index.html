@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+	<title>Homepage</title>
+	<link href="styles.css" rel="stylesheet" />
+	<style>
+
+		h2 {
+			font-family: 'Libre Bodoni', sans-serif;
+			font-size: 40px;
+		}
+
+		p {
+			font-family: 'Roboto Slab', sans-serif;
+		}
+
+		a {
+			font-family: 'Roboto', sans-serif;
+		}
+	
+		#logo img{
+			height: 170px;
+			width: auto;
+			position: absolute;
+			top: -50px;
+			left: -30px;
+		}
+
+		#content_1 {
+			border: 2px solid white;
+			height: 400px;
+			width: 1000px;
+			position: absolute;
+			bottom: 150px;
+			left: 0;
+			right: 0;
+			border-radius: 10px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#face {
+			height: 300px;
+			width: 300px;
+			border: 2px solid white;
+			border-radius: 10px;
+			object-fit: cover;
+			position: absolute;
+			bottom: 50px;
+			left: 150px;
+		}
+
+		#face img {
+			height: 300px;
+			width: 300px;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+
+		.photo_filler {
+			position: relative;
+		}
+
+		.showimage {
+			position: absolute;
+			right: 0;
+		}
+
+		#clickme {
+			position: relative;
+			left: 400px;
+		}
+
+		#clickme img {
+			width: 200px;
+			height: auto;
+		}
+
+		#short_intro {
+			position: relative;
+			width: 40%;
+			left: 450px;
+			bottom: 20px;
+			padding-left: 70px;
+			color: white;
+		}
+	
+
+		.clearfloat {
+			clear: both;
+		}
+
+		#content_2 {
+			position: relative;
+			bottom: -600px;
+			text-align: center;
+		}
+
+		@keyframes moving {
+			0% {right: 0;}
+			90% {right: 85%;}
+		}
+
+		.moving {
+			position: absolute;
+			animation: moving 7s infinite linear;
+		}
+
+		.bear {
+			height: 100px;
+		}
+
+		.speech {
+			text-align: center;
+		}
+
+	</style>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+	<script>
+	$(document).ready(function() {
+
+
+			$('#face').click(function(){
+				$('.photo_filler').toggle();
+				
+		});
+
+		
+	});
+
+	</script>
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<img src="logo.png" alt="logo" />
+		</div>
+
+		<div id="nav-wrapper">
+			<div id="nav">
+				<a href="" class="active">Home</a>
+				<a href="">Work</a>
+				<a href="">About</a>
+				<a href="">Resume</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="content_1">
+	<div class="column1">
+		<div id="face">
+			<img class="showimage" src="photo_filler.jpeg" alt="real face">
+			<img class="photo_filler" src="face.png" alt="face" />
+		</div>
+		<div id="clickme">
+			<img src="clickme.png" alt="click me" />
+		</div>
+	</div>
+
+	<div class="column1">
+		<div id="short_intro">
+			<h2>Hello! I'm Louis :)</h2>
+			<p>A Junior at USC and extremely loves acai bowls</p>
+		</div>
+	</div>
+	</div>
+
+
+	<div id="content_2">
+		<h2>What am I doing now?</h2>
+			<div class="moving">
+				<div class="speech">Trying to overcome COVID...</div>
+				<img class="bear" src="bear.gif" alt="bear crawling" />
+			</div>
+	</div>
+
+
+	<div id="footer">
+		<a href="https://instagram.com">Instagram</a>
+		<a href="https://linkedin.com">Linkedin</a>
+		<p>© 2022 Louis Ro</p>
+	</div>
+
+
+
+</body>
+</html>

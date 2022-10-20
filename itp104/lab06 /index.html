@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Louis Ro | Simple Image Gallery</title>
+	<style>
+
+		body{
+			background-color: #9590A8;
+			margin: 0 auto;
+		}
+
+		#header{
+			text-align: center;
+			background-color: #18020C;
+			color: white;
+			padding: 10px;
+			margin-bottom: 40px;
+		}
+
+
+		#container {
+			width: 1100px;
+			height: 700px;
+			margin-right: auto;
+			margin-left: auto;
+			text-align: center;
+			background-color: #BBCBCB;
+			border: 10px #000;
+
+		}
+
+		.thumbnail-container {
+			text-align: center;
+			padding: 5px;
+		}
+
+		.thumbnail-container p {
+			visibility: hidden;
+		}
+
+		.thumbnail-container:hover p {
+			visibility: visible;
+		}
+
+
+		.thumbnail{
+			height: 230px;
+			overflow: hidden;
+			border: 1px solid black;
+			opacity: .5;
+		}
+
+		.thumbnail:hover {
+			opacity: 1;
+		}
+
+		.landscape {
+			width: auto;
+			height: 100%;
+		}
+
+		.portrait {
+			width: 100%;
+			height: auto;
+		}
+
+		.clearfloat {
+			clear: both;
+		}
+
+		div.thumbnail-container{
+			margin: 5px 15px;
+			display: inline-block;
+			vertical-align: top;
+			width: 250px;
+			height: 250px;
+		}
+
+
+
+
+	</style>
+
+</head>
+<body>
+
+<div id="container">
+
+<div id="header">
+	<h1>My Favorite Foods</h1>
+</div>
+
+<div id="gallery">
+
+
+	<div class="thumbnail-container">
+		<div class="thumbnail">
+			<img class="portrait" src="img/acaibowl.jpeg" alt="Acai Bowl">
+		</div>
+		<p>Acai Bowl</p>
+	</div>
+
+	<div class="thumbnail-container">
+		<div class="thumbnail">
+			<img class="landscape" src="img/chicken.jpeg" alt="Chicken">
+		</div>
+		<p>Fried Chicken</p>
+	</div>
+
+	<div class="thumbnail-container">
+		<div class="thumbnail">
+			<img class="portrait" src="img/cronut.jpeg" alt="Cronut">
+		</div>
+		<p>Cronut</p>
+	</div>
+
+	<div class="clearfloat"></div>
+
+	<div class="thumbnail-container">
+		<div class="thumbnail">
+			<img class="portrait" src="img/omomo.jpeg" alt="Omomo">
+		</div>
+		<p>Omomo</p>
+	</div>
+
+	<div class="thumbnail-container">
+		<div class="thumbnail">
+			<img class="portrait" src="img/pizza.jpeg" alt="Pizza">
+		</div>
+		<p>Pizza</p>
+	</div>
+
+	<div class="thumbnail-container">
+		<div class="thumbnail">
+			<img class="landscape" src="img/sushi.jpeg" alt="Sushi">
+		</div>
+		<p>Sushi</p>
+	</div>
+
+	<div class="clearfloat"></div>
+
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Valentine's Day</title>
+
+<style>
+	.row{
+		margin: 10px;
+
+	}
+
+	#requests{
+		width: 50%;
+	}
+
+	.label{
+		width: 10%;
+		float: left;
+	}
+
+	.row{
+		margin: 20px;
+	}
+
+	h1{
+		padding: 10px;
+	}
+
+	button{
+		padding: 5px;
+	}
+
+	#submit-btn{
+		background-color: pink;
+	}
+
+
+
+</style>
+
+</head>
+
+<body>
+	<h1>Valentine Day Letter Order Form</h1>
+	<form action="confirmation.html">
+		<div class="row">
+		<label for="name" class="label"><strong>Name:</strong></label>
+		<input id="name" type="text" placeholder="Enter your name" required>
+		</div>
+
+		<div class="row">
+		<label for="email" class="label"><strong>Email:</strong></label>
+		<input id="email" type="email" placeholder="Enter Email" required>
+		</div>
+
+		<div class="row">
+		<label for="phone" class="label"><strong>Phone:</strong></label>
+		<input id="phone" type="text" placeholder="(000) 000-0000" required>
+		</div>
+
+		<div class="row">
+		<label class="label"><strong>Favorite color:</strong></label>
+		<label for="white"><input id="white" type="radio" name="color" value="W">White</label>
+		<label for="red"><input id="red" type="radio" name="color" value="R">Red</label>
+		<label for="pink"><input id="pink" type="radio" name="color" value="P">Pink</label>
+		</div>
+
+		<div class="row">
+		<label class="label"><strong >Quotes:</strong></label>
+		<label for="ily"><input id="ily" type="checkbox" name="ily" value="Iloveyou">I love you</label>
+		<label for="icfy"><input id="icfy" type="checkbox" name="icfy" value="Icareforyou">I care for you</label>
+		<label for="iwy"><input id="iwy" type="checkbox" name="iwy" value="Iwantyou">I want you</label>
+		</div>
+
+		<div class="row">
+		<label for="decor" class="label"><strong>Decoration:</strong></label>
+		<select id="decor">
+				<option value="Select">--select decor--</option>
+				<option value="Flower">Flower</option>
+				<option value="Hearts">Hearts</option>
+				<option value="SmileyFaces">Smiley Faces</option>
+		</select>
+		</div>
+
+		<div class="row">
+		<label for="requests" class="label"><strong>Any other requests:</strong></label>
+		<textarea id="requests" placeholder="Suggestions, opinions, requests, etc..."></textarea>
+		</div>
+
+		<div class="row">
+		<label for="tc"><input id="tc" type="checkbox" name="tc" value="termsconditions" required>I accept the Terms & Conditions</label>
+		</div>
+
+		<div class="row">
+		<button id="submit-btn" type="submit">Send</button>
+		<button id="reset" type="reset">Reset</button>
+		</div>	
+
+	</form>
+
+</body>
+</html>

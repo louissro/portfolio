@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Louis Ro | TV Show / Movie Photo Collage</title>
+<link href="styles.css" rel="stylesheet" />
+<style>
+
+	@font-face {
+		font-family: sketch;
+		src: url(fonts/Sketch.otf);
+	}
+
+	#header {
+		height: 400px;
+		background-image: url("img/zootopia1.jpg");
+		text-align: center;
+		font-size: 50px;
+		background-position: center;
+		padding: 5px;
+		line-height: 5px;
+		background-size: cover;
+		color: white;
+	}
+
+	
+
+	.a {
+		width: 493px;
+		height: 275px;
+		object-fit: cover;
+		padding: 0 3px;
+	}
+
+
+	#img3 {
+		width: 992px;
+		height: 275px;
+		object-fit: cover;
+		padding: 0 4px;
+	}
+
+	.b{
+		width: 694px;
+		height: 275px;
+		object-fit: cover;
+		padding: 0 4px;
+	}
+
+	.c {
+		width: 292px;
+		height: 275px;
+		object-fit: cover;
+		padding: 0 2px;
+	}
+
+	#img8 {
+		width: 197px;
+		height: 275px;
+		object-fit: cover;
+		padding: 0 4px;
+	}
+
+	.column {
+		float: left;
+		position: relative;
+	}
+
+
+	.overlay {
+			background: rgba(0,0,0,.6);
+			color: white;
+			position: absolute;
+			top: 0px;
+			right: 4px;
+			left: 4px;
+			bottom: 4px;
+			line-height: 250px;
+			visibility: hidden;
+		}
+
+	.column:hover .overlay {
+			visibility: visible;
+			text-align: center;
+		}
+
+	#nav-wrapper {
+		position: absolute;
+	}
+
+	h1 {
+		font-family: sketch, sans-serif;
+	}
+
+
+		
+
+	
+</style>
+</head>
+<body>
+	<div id="header">
+		<h1>Gallery</h1>
+	</div>
+
+<div id="nav-wrapper">
+
+	<div id="nav">
+
+		<ul>
+			<li><a href="index.html" >Home</a>
+				<ul>
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="index.html#animation">Animation</a></li>
+					<li><a href="index.html#critics">Critics</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery.html" class="active">Gallery</a></li>
+		</ul>
+		<div class="clearfloat"></div>
+
+	</div>
+
+</div>
+
+<div id="container">
+		<div id="content">
+			<div id="row_1">
+				<div class="column">
+				<img class="a" src="img/zootopia2.jpeg" alt="Zootopia 1" />
+					<div class="overlay">
+						<p>At the DMV with Flash the Sloth</p>
+					</div>
+				</div>
+				<div class="column">
+				<img class="a" src="img/zootopia3.jpeg" alt="Zootopia 2" />
+					<div class="overlay">
+						<p>Judy Hopps saving the day!</p>
+					</div>
+				</div>
+			</div>
+			<div id="row_2">
+				<div class="column">
+				<img id="img3" src="img/zootopia4.jpeg" alt="Zootopia 3" />
+					<div class="overlay">
+						<p>Selfieeeee</p>
+					</div>
+				</div>
+			</div>
+			<div id="row_3">
+				<div class="column">
+				<img class="b" src="img/zootopia5.jpeg" alt="Zootopia 4" />
+					<div class="overlay">
+						<p>Silly Judy is so worried</p>
+					</div>
+				</div>
+				<div class="column">
+				<img class="c" src="img/zootopia6.jpeg" alt="Zootopia 5" />
+					<div class="overlay">
+						<p>A cute group photo!</p>
+					</div>
+				</div>
+			</div>
+			<div id="row_4">
+				<div class="column">
+				<img class="a" src="img/zootopia7.jpeg" alt="Zootopia 6" />
+					<div class="overlay">
+						<p>The whole squad at Zootopia!</p>
+					</div>
+				</div>
+				<div class="column">
+				<img class="c" src="img/zootopia8.jpg" alt="Zootopia 7" />
+					<div class="overlay">
+						<p>Time of reflection</p>
+					</div>
+				</div>
+				<div class="column">
+				<img id="img8" src="img/zootopia9.jpeg" alt="Zootopia 8" />
+					<div class="overlay">
+						<p>Fun times!</p>
+					</div>
+				</div>
+			</div>
+			<div id="row_5">
+				<div class="column">
+				<img class="c" src="img/zootopia10.jpeg" alt="Zootopia 9" />
+					<div class="overlay">
+						<p>A sly fox and scared bunny</p>
+					</div>
+				</div>
+				<div class="column">
+				<img class="b" src="img/zootopia11.jpeg" alt="Zootopia 10" />
+					<div class="overlay">
+						<p>Baby Judy with her parents</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfloat"></div>
+</div>
+
+
+
+<div id="footer">
+	<p><em>Watch it on Disney+</em></p>
+</div>
+
+</body>
+</html>
