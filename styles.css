@@ -32,6 +32,13 @@ h2 {
     margin-bottom: 60px;
 }
 
+#sectionOne h4{
+    font-family: ginger, sans-serif;
+    font-size: 15px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
 
 .anchors {
     text-decoration: none;
@@ -411,6 +418,21 @@ iframe {
     padding: 5px;
     font-size: 1.25em;
 }
+
+.title a {
+    text-decoration: none;
+    color: black;
+}
+
+.arrow-right {
+    padding: 10px;
+}
+
+#descrip {
+    size:
+}
+
+
 
 @media only screen and (max-width: 768px) {
     #sectionOne {
