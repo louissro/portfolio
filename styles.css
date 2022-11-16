@@ -343,6 +343,10 @@ iframe {
     box-shadow: 20px 20px;
 }
 
+#modal6 {
+    width: 1000px;
+}
+
 .modal.active {
     transform:translate(-50%, -50%) scale(1);
 }
@@ -435,6 +439,17 @@ iframe {
     #sectionOne {
         width: 100%;
     }
+}
+
+.flexslider {
+    width: 300px;
+    height: auto;
+}
+
+#sectionThree h4 {
+    font-family: Ginger, sans-serif;
+    margin-top: -60px;
+    margin-left: 80px;
 }
 
 /* .modalNext {
