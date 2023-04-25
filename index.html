@@ -44,7 +44,7 @@
           </div>
           <div class="projects_text">
             <h3>
-              <span onclick="openNav()"
+              <span onclick="openNav_7()"
                 ><a
                   >ScrappyChef<i
                     class="fa fa-arrow-circle-o-right arrow-right"
@@ -57,8 +57,8 @@
               Good bye food waste, hello delicious meals. Scan your fridge to access a wide variety of AI-generated recipes.
             </p>
           </div>
-          <div id="podsc" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          <div id="scrappychef" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav_7()"
               >&times;</a
             >
             <div class="overlay-content">
@@ -576,6 +576,14 @@
 
       function closeNav_6() {
         document.getElementById("trade").style.width = "0%";
+      }
+
+      function openNav_7() {
+        document.getElementById("scrappychef").style.width = "100%";
+      }
+
+      function closeNav_7() {
+        document.getElementById("scrappychef").style.width = "0%";
       }
 
       //     var body = document.body,
